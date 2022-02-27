@@ -1,9 +1,0 @@
-<a [routerLink]="backendService.getCurrentlySelectedTopic().topic + '/' + backendService.getCurrentlySelectedSeries().series + '/' + linkLabel" id="articleGridLink" (mouseenter)="mouseInState()" (mouseleave)="mouseOutState()"(click)="onClick($event)">
-    <img [@highlight]=currentState class="articleLinkPicture" [src]="imageURL">
-    
-    <div id="articleLinkLabelArea">
-        <div id="linkText">{{linkLabel}}</div>
-    </div>
-</a>
-
-
