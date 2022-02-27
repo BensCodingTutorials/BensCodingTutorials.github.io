@@ -1,7 +1,0 @@
-<div id="sortByDropDown" class = "dropDown">
-    <label for="dropDown_label">{{label}}:</label>
-
-    <select name="dropDown_label" [(ngModel)] = "selectorValue" #sortByDropDownElement>
-        <option *ngFor="let dropDownValue of content" [attr.value] = "dropDownValue" >{{dropDownValue}}</option>
-    </select> 
-</div>
