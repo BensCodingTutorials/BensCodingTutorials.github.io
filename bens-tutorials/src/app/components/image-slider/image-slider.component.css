@@ -1,0 +1,61 @@
+#imageSlider {
+    /* background-color: chartreuse; */
+    display:grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: auto auto;
+
+}
+
+#imageDisplay {
+
+    grid-row: 1;
+    grid-column: 1/4;
+
+}
+
+.imageSliderImage{
+    display: block;
+    margin: auto;
+    align-self: center;
+    justify-self: center;
+    width:100%;
+    height: auto;
+}
+
+.sliderButton {
+    display:block;
+    color:white;
+    opacity: 50%;
+    font-size: 40px;
+    align-self: center;
+}
+
+#leftButton {
+    grid-row: 1;
+    grid-column: 1/2;
+    justify-self: right;
+}
+
+#rightButton {
+    grid-row: 1;
+    grid-column: 3/4;
+    justify-self: left;
+
+}
+
+#imageIndicator {
+    display: flex;
+    align-self: end;
+    flex-direction: row;
+    justify-self: center;
+    grid-row: 1;
+    grid-column:1/4;
+}
+
+.indicatorDot {
+    color: white;
+    font-size: 48px;
+    opacity: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+}

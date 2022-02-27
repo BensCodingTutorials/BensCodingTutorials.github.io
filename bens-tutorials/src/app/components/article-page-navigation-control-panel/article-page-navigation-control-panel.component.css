@@ -1,0 +1,40 @@
+#articlePageNavigationControlPanel {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.articleButton {
+    display: block;
+    font-size: 25px;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    cursor: pointer;
+}
+#leftButton {
+    justify-self: left;
+}
+
+#linkToSeries {
+    display: block;
+    justify-self: middle;
+    transform: translateX(-13px);
+
+}
+
+#rightButton {
+
+    justify-self: right;
+}
+
+.labelNormalTextFormat {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transform: translateY(-3.5px);
+
+}

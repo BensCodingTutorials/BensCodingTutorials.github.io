@@ -1,0 +1,7 @@
+<div id="topicSelectionDropDown" class="dropDown">
+    <label for="dropDown_label">{{label}}:</label>
+    
+    <select name="dropDown_label" [ngModel] = "selectorValue" (ngModelChange)="onValueChanged($event)">
+        <option *ngFor="let dropDownValue of content" [ngValue] = "dropDownValue.RowKey" >{{dropDownValue.topic}}</option>
+    </select> 
+</div>

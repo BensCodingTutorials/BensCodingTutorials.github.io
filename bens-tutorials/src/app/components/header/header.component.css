@@ -1,0 +1,52 @@
+#headerComponent {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    /* background-color: rgb(61, 64, 68); */
+    
+}
+
+#socialLinksArea {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: left;
+    align-content: center;
+    margin-left: 30px;
+}
+
+
+
+#navigationLinksArea {
+    display:flex;
+    flex-direction: row;
+    grid-template-columns: auto auto auto;
+    justify-content: right;
+    align-items: center;
+    margin-right: 30px;
+}
+
+
+
+
+
+#websiteLogo {
+
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+    width: auto;
+}
+
+#searchBar {
+    margin-left: 25px;
+}
+
+.socialLink {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

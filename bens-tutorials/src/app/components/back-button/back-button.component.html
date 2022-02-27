@@ -1,0 +1,4 @@
+<a *ngIf="backendService.getBackButtonVisible()"  [routerLink] = "" id="backButton" (mouseenter)="mouseInState()" (mouseleave)="mouseOutState()" (click)="onClick_ArticleGrid()"> 
+    <img [@highlight]=currentState id="backButtonImage" src="../../../assets/Images/Icons/backIcon.png">
+    <div [@highlight]=currentState>Back</div>
+</a>

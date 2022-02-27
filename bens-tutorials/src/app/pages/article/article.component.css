@@ -1,0 +1,95 @@
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+
+#page_IN {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#page_OUT {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#articlepage {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+#articleHeader {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    margin-bottom: 20px;
+}
+
+#articleTitleHeader {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#articleShareLinksArea {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#articleSecondaryInfo{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#authorInfo {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: left;
+    align-items: center;
+}
+
+#authorPicture {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+
+#authorLabel{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-left: 15px;
+}
+
+#shareOptions {
+    background-color: darkkhaki;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-self:right;
+    align-items: center;
+}
+
+#articleContent {
+    min-height: 75vh;
+}
+
+#articleFooter {
+    justify-self: center;
+}
+
+#backButton_article {
+    display:block;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+#articleTextArea {
+    margin-bottom: 30px;
+}

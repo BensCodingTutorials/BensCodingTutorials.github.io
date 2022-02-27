@@ -1,0 +1,11 @@
+<div id="articlePageNavigationControlPanel">
+    <a [@highlight_left]=currentState_left class = "articleButton" id="leftButton"  (mouseenter)="mouseInState_left()" (mouseleave)="mouseOutState_left()" (click)="updateLink_Previous()">
+        ◀ <span class="labelNormalTextFormat"> Previous Article</span>
+    </a>
+    
+    <a [@highlight_middle]=currentState_middle class = "articleButton"  (mouseenter)="mouseInState_middle()" (mouseleave)="mouseOutState_middle()" (click)="updateLinkToSeriesLink()" id = "linkToSeries">  <span class="labelNormalTextFormat">Return to Article Selection Page </span></a>
+    
+    <a [@highlight_right]=currentState_right class = "articleButton" id="rightButton"  (mouseenter)="mouseInState_right()" (mouseleave)="mouseOutState_right()" (click)="updateLink_Next()">
+        <span class="labelNormalTextFormat">Next Article </span> ▶
+    </a>
+</div>
