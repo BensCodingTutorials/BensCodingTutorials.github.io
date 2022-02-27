@@ -1,0 +1,6 @@
+<a [routerLink]="linkLabel" id="topicGridLink" (mouseenter)="mouseInState()" (mouseleave)="mouseOutState()"(click)="onClick($event)">
+    <img [@highlight]=currentState class="topicLinkPicture" [src]="imageURL">
+    <div id="topicLinkLabelArea">
+        <div id="linkText">{{linkLabel}}</div>
+    </div>
+</a>

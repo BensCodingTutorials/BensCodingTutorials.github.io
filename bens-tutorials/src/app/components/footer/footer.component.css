@@ -1,0 +1,14 @@
+#footerComponent {
+    display:flex;
+    /* background-color: rgb(61, 64, 68); */
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 12px;
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

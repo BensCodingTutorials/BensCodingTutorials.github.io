@@ -1,0 +1,32 @@
+<div id="page" [id]="animationState">
+   <app-article-page-back-button id="backButton_article"></app-article-page-back-button>
+   <div id="articlepage">
+      <div id="articleHeader">
+         <h1 id="articleTitleHeader"> {{currentArticle.articleTitle}}</h1>
+         
+         <div id=articleSecondaryInfo>
+            <div id="authorInfo">
+               <img id="authorPicture" src="../../../assets/Images/Icons/PlaceholderPicture.png">           
+               <div id="authorLabel">
+                  <div>
+                     {{currentArticle.author}}
+                  </div>
+                  <div id="dateLabel">
+                     {{currentArticle.publishedDate}}
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <app-social-media-share-links-container id="articleShareLinksArea"></app-social-media-share-links-container>
+      </div>
+      
+      <div id="articleTextArea" [innerHtml]="injectedHTML"></div>
+
+   </div>
+   <app-article-page-navigation-control-panel [articlePage]="this" [nextArticleName]="currentArticle.nextArticle" [previousArticleName]="currentArticle.previousArticle"></app-article-page-navigation-control-panel>
+</div>
+ 
+   <app-footer></app-footer>
+
+    

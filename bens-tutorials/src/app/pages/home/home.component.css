@@ -1,0 +1,13 @@
+#homepage {
+    display:grid;
+    grid-template-rows: auto auto;
+    align-items: center;
+}
+
+#imageSliderArea {
+    /* background-color: red; */
+}
+
+#articleGridArea {
+    /* background-color: green; */
+}

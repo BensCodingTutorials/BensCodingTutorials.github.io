@@ -1,0 +1,6 @@
+<a [routerLink]="backendService.getCurrentlySelectedTopic().topic + '/' + linkLabel" id="seriesGridLink" (mouseenter)="mouseInState()" (mouseleave)="mouseOutState()"(click)="onClick($event)">
+    <img [@highlight]=currentState class="seriesLinkPicture" [src]="imageURL">
+    <div id="seriesLinkLabelArea">
+        <div id="linkText">{{linkLabel}}</div>
+    </div>
+</a>

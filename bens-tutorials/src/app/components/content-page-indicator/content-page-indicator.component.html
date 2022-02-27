@@ -1,0 +1,5 @@
+<div id="pageContentIndicator">
+    <div [@highlight_left]=currentState_left class = "pageIndicatorButton" id="leftButton" (click)="onClick_LeftButton($event)" (mouseenter)="mouseInState_left()" (mouseleave)="mouseOutState_left()">◀</div>
+    <div id = "indicatorText">{{currentPage + 1}} / {{pageTotal}} </div>
+    <div [@highlight_right]=currentState_right class = "pageIndicatorButton" id="rightButton" (click)="onClick_RightButton($event)" (mouseenter)="mouseInState_right()" (mouseleave)="mouseOutState_right()">▶</div>
+</div>

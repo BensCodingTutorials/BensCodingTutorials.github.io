@@ -1,0 +1,18 @@
+#aboutpage {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#bioArea {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#bioText {
+    margin-left: 20px;
+}
+
+#secondaryInfoArea {
+
+}
